@@ -425,7 +425,6 @@ def save_user_info(user_id: str, user_info: dict[str, Any], runtime: ToolRuntime
     store.put(("users",), user_id, user_info)
     return "Successfully saved user info."
 
-#Define the model
 model = ChatOpenAI(model="gpt-4.1")
 
 store = InMemoryStore()
